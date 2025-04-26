@@ -31,31 +31,31 @@ A full-featured blog web application built with Flask. It supports user registra
 - **Version Control**: Git + GitHub
 
 ## 🗃 Project Structure
-
+```
 day-71-starting-files-blog-for-deployment/
+├── main.py                 # Main application file with routes, models, and logic
+├── forms.py                # Flask-WTF forms for registration, login, and post creation
+├── requirements.txt        # List of Python dependencies
+├── Procfile                # Configuration file for deployment with gunicorn
+├── .gitignore              # Git ignore rules for unnecessary files
+├── .env                    # (Optional) Environment variables for local development
 │
-├── main.py                  # Main application file with routes, models, and logic
-├── forms.py                 # Flask-WTF forms for registration, login, and post creation
-├── requirements.txt         # List of Python dependencies
-├── Procfile                 # Configuration file for deployment with gunicorn
-├── .gitignore               # Git ignore rules for unnecessary files
-├── .env                     # (Optional) Environment variables for local development
+├── templates/              # Jinja2 HTML templates
+│   ├── base.html           # Base layout template
+│   ├── index.html          # Homepage displaying all blog posts
+│   ├── register.html       # User registration page
+│   ├── login.html          # User login page
+│   ├── make-post.html      # Page to create/edit blog posts
+│   ├── post.html           # Individual post page with comment form
+│   ├── about.html          # About page
+│   └── contact.html        # Contact page
 │
-├── templates/               # Jinja2 HTML templates
-│   ├── base.html            # Base layout template
-│   ├── index.html           # Homepage displaying all blog posts
-│   ├── register.html        # User registration page
-│   ├── login.html           # User login page
-│   ├── make-post.html       # Page to create/edit blog posts
-│   ├── post.html            # Individual post page with comment form
-│   ├── about.html           # About page
-│   └── contact.html         # Contact page
-│
-├── static/                  # Static files like CSS and images
+├── static/                 # Static files like CSS and images
 │   ├── css/
-│   │   └── styles.css       # Custom stylesheet
+│   │   └── styles.css      # Custom stylesheet
 │   └── assets/
-│       └── img/             # Images used in the blog (headers, avatars, etc.)
+│       └── img/            # Images used in the blog (headers, avatars, etc.)
+ ```
 
 
 ## ⚙️ Setup Instructions
